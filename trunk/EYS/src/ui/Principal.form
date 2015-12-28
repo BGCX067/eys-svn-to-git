@@ -1,0 +1,1486 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JFrame" name="erlangKEtapasMedia_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 180]"/>
+        </Property>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="erlangKHistograma_Button" pref="167" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="muestrasErlang_Label" pref="54" max="32767" attributes="0"/>
+                              <Component id="media_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="etapas_Label" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="media_TextField" alignment="1" max="32767" attributes="0"/>
+                              <Component id="muestrasErlang_TextField" max="32767" attributes="0"/>
+                              <Component id="etapas_TextField" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="etapas_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="etapas_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="media_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="media_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasErlang_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasErlang_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="erlangKHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="media_TextField">
+        </Component>
+        <Component class="javax.swing.JButton" name="erlangKHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="erlangKHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="media_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Media:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="etapas_TextField">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="etapas_TextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="etapas_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Etapas:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasErlang_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasErlang_TextField">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="muestrasErlang_TextFieldActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="erlangKLambda_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 170]"/>
+        </Property>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="erlangLambdaHistograma_Button" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="lambdaErlang_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasErlangLambda_Label" alignment="0" pref="54" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="muestrasErlangLambda_TextField" pref="94" max="32767" attributes="0"/>
+                              <Component id="lambdaErlang_TextField" max="32767" attributes="0"/>
+                              <Component id="etapasErlangLambda_TextField" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lambdaErlang_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lambdaErlang_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="etapasErlangLambda_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasErlangLambda_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasErlangLambda_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="erlangLambdaHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="muestrasErlangLambda_TextField">
+        </Component>
+        <Component class="javax.swing.JButton" name="erlangLambdaHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="erlangLambdaHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasErlangLambda_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="lambdaErlang_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="lambdaErlang_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Lambda:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Etapas:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="etapasErlangLambda_TextField">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="gammaMediaDesTipica_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 180]"/>
+        </Property>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="gammaMediaHistograma_Button" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="muestrasMediaGamma_Label" max="32767" attributes="0"/>
+                              <Component id="desTipicaGamma_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="mediaGamma_Label" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="mediaGamma_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="desTipicaGamma_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasMediaGamma_TextField" alignment="1" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="mediaGamma_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="mediaGamma_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="desTipicaGamma_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="desTipicaGamma_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasMediaGamma_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasMediaGamma_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="gammaMediaHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="mediaGamma_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Media:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="mediaGamma_TextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="desTipicaGamma_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="desTipicaGamma_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Desviaci&#xf3;n T&#xed;pica:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="gammaMediaHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gammaMediaHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasMediaGamma_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasMediaGamma_TextField">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="gammaBetaTeta_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 200]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="gammaBetaHistograma_Button" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="muestrasBetaGamma_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="tettaGamma_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="betaGamma_Label" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="betaGamma_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="tettaGamma_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasBetaGamma_TextField" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="betaGamma_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="betaGamma_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="tettaGamma_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tettaGamma_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasBetaGamma_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasBetaGamma_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="gammaBetaHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="betaGamma_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="betaGamma_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Beta:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasBetaGamma_TextField">
+        </Component>
+        <Component class="javax.swing.JButton" name="gammaBetaHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gammaBetaHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasBetaGamma_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="tettaGamma_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="tettaGamma_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tetta:"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="normalGauss_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 130]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="gaussHistograma_Button" pref="152" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="muestrasGauss_Label" min="-2" pref="54" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="muestrasGauss_TextField" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasGauss_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasGauss_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="gaussHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="gaussHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gaussHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasGauss_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasGauss_TextField">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="normalSchemeiser_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 130]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="schemeiserHistograma_Button" pref="152" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="muestrasSchemeiser_Label" min="-2" pref="54" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Component id="muestrasSchemeiser_TextField" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasSchemeiser_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasSchemeiser_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="schemeiserHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="muestrasSchemeiser_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasSchemeiser_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="schemeiserHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="schemeiserHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="poisson_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 160]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="poissonHistograma_Button" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="alphaPoisson_Label" max="32767" attributes="0"/>
+                              <Component id="muestrasPoisson_Label" pref="68" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="alphaPoisson_TextField" max="32767" attributes="0"/>
+                              <Component id="muestrasPoisson_TextField" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="alphaPoisson_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="alphaPoisson_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasPoisson_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasPoisson_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="poissonHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="alphaPoisson_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Alpha:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="alphaPoisson_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasPoisson_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="poissonHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="poissonHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasPoisson_TextField">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="discreta_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 160]"/>
+        </Property>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="discreta_Button" pref="175" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="muestrasDiscreta_Label" max="32767" attributes="0"/>
+                              <Component id="intervalosDiscreta_Label" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="intervalosDiscreta_TextField" max="32767" attributes="0"/>
+                              <Component id="muestrasDiscreta_TextField" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="intervalosDiscreta_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="intervalosDiscreta_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasDiscreta_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasDiscreta_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="discreta_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="intervalosDiscreta_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Intervalos:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="intervalosDiscreta_TextField">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="intervalosDiscreta_TextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasDiscreta_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasDiscreta_TextField">
+        </Component>
+        <Component class="javax.swing.JButton" name="discreta_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Insertar Datos"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="discreta_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="empirica_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 160]"/>
+        </Property>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="empirica_Button" pref="380" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="muestrasEmpirica_Label" alignment="1" max="32767" attributes="0"/>
+                              <Component id="intervalosEmpirica_Label" alignment="1" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="intervalosEmpirica_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasEmpirica_TextField" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="intervalosEmpirica_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="intervalosEmpirica_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasEmpirica_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasEmpirica_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="empirica_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="muestrasEmpirica_TextField">
+        </Component>
+        <Component class="javax.swing.JButton" name="empirica_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Insertar Datos"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="empirica_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="intervalosEmpirica_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Intervalos:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="intervalosEmpirica_TextField">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="intervalosEmpirica_TextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasEmpirica_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="exponencial_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 160]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="exponencialHistograma_Button" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="mediaExponencial_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasExponencial_Label" alignment="0" pref="68" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="mediaExponencial_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasExponencial_TextField" alignment="0" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="mediaExponencial_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="mediaExponencial_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasExponencial_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasExponencial_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="exponencialHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="mediaExponencial_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Media:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="mediaExponencial_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasExponencial_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasExponencial_TextField">
+        </Component>
+        <Component class="javax.swing.JButton" name="exponencialHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exponencialHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="geometrica_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 160]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="geometricaHistograma_Button" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="probabilidadGeometrica_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasGeometrica_Label" alignment="0" pref="68" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="probabilidadGeometrica_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasGeometrica_TextField" alignment="0" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="probabilidadGeometrica_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="probabilidadGeometrica_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasGeometrica_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasGeometrica_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="geometricaHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="probabilidadGeometrica_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Probabilidad:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="probabilidadGeometrica_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasGeometrica_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasGeometrica_TextField">
+        </Component>
+        <Component class="javax.swing.JButton" name="geometricaHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="geometricaHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="triangularInicioFin_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 190]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="triangularSimpleHistograma_Button" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="muestrasTriangularSimple_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="finTriangularSimple_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="inicioTriangularSimple_Label" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="inicioTriangularSimple_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="finTriangularSimple_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasTriangularSimple_TextField" alignment="0" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="inicioTriangularSimple_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="inicioTriangularSimple_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="finTriangularSimple_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="finTriangularSimple_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasTriangularSimple_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasTriangularSimple_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="triangularSimpleHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="inicioTriangularSimple_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Inicio:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasTriangularSimple_TextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="inicioTriangularSimple_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="finTriangularSimple_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fin:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="finTriangularSimple_TextField">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="finTriangularSimple_TextFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="triangularSimpleHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="triangularSimpleHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasTriangularSimple_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="triangularInicioAlturaFin_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 225]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="triangularHistograma_Button" alignment="0" pref="152" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="alturaTriangular_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasTriangular_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="finTriangular_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="inicioTriangular_Label" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="inicioTriangular_TextField" alignment="0" pref="100" max="32767" attributes="0"/>
+                              <Component id="finTriangular_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasTriangular_TextField" alignment="0" pref="100" max="32767" attributes="0"/>
+                              <Component id="alturaTriangular_TextField" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="inicioTriangular_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="inicioTriangular_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="alturaTriangular_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="alturaTriangular_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="finTriangular_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="finTriangular_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasTriangular_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasTriangular_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="triangularHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="inicioTriangular_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Inicio:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasTriangular_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="triangularHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="triangularHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="finTriangular_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="finTriangular_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fin:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="inicioTriangular_TextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasTriangular_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="alturaTriangular_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Altura:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="alturaTriangular_TextField">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="uniforme_Frame">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 190]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="uniformeHistograma_Button" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="muestrasUniforme_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="finUniforme_Label" alignment="0" max="32767" attributes="0"/>
+                              <Component id="inicioUniforme_Label" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="inicioUniforme_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="finUniforme_TextField" alignment="0" max="32767" attributes="0"/>
+                              <Component id="muestrasUniforme_TextField" alignment="0" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="inicioUniforme_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="inicioUniforme_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="finUniforme_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="finUniforme_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="muestrasUniforme_Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="muestrasUniforme_TextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="uniformeHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="inicioUniforme_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Inicio:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="muestrasUniforme_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Muestras:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="uniformeHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uniformeHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="finUniforme_TextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="finUniforme_Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fin:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="inicioUniforme_TextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="muestrasUniforme_TextField">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="muestrasUniforme_TextFieldActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="rellenarTablaDiscreta">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[400, 400]"/>
+        </Property>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane1" pref="380" max="32767" attributes="0"/>
+                      <Component id="discretaHistograma_Button" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" pref="246" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="discretaHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="tablaDiscreta">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="2" rowCount="0">
+                    <Column editable="true" title="Posicion (Entero)" type="java.lang.Integer"/>
+                    <Column editable="true" title="Frecuencia (Flotante)" type="java.lang.Double"/>
+                  </Table>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="discretaHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="discretaHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="rellenarTablaEmpirica">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[400, 400]"/>
+        </Property>
+        <Property name="resizable" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane2" pref="375" max="32767" attributes="0"/>
+                      <Component id="empiricaHistograma_Button" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" pref="242" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="empiricaHistograma_Button" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="tablaEmpirica">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="3" rowCount="0">
+                    <Column editable="true" title="Intervalo Menor (Flotante)" type="java.lang.Double"/>
+                    <Column editable="true" title="Intervalo Mayor (Flotante)" type="java.lang.Double"/>
+                    <Column editable="true" title="Cantidad (Flotante)" type="java.lang.Double"/>
+                  </Table>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="empiricaHistograma_Button">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Generar Histograma"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="empiricaHistograma_ButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Variables Aleatorias"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="triangularInicioAlturaFin_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="uniforme_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="triangularInicioFin_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="geometrica_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="exponencial_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="empirica_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="discreta_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="poisson_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="normalSchemeiser_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="normalGauss_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="gammaBetaTeta_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="gammaMediaDesTipica_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="erlangKLambda_JButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="erlangKEtapasMedia_JButton" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="erlangKEtapasMedia_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="erlangKLambda_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="gammaMediaDesTipica_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="gammaBetaTeta_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="normalGauss_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="normalSchemeiser_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="poisson_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="discreta_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="empirica_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="exponencial_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="geometrica_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="triangularInicioFin_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="triangularInicioAlturaFin_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="uniforme_JButton" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="erlangKEtapasMedia_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Erlang_K (Con etapas y media)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="erlangKEtapasMedia_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="erlangKLambda_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Erlang_K (Con lambda)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="erlangKLambda_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="gammaMediaDesTipica_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Gamma (Con media y desviaci&#xf3;n t&#xed;pica)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gammaMediaDesTipica_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="gammaBetaTeta_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Gamma (Con beta y teta)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gammaBetaTeta_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="normalGauss_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Normal (Gauss)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="normalGauss_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="normalSchemeiser_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Normal (Schemeiser)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="normalSchemeiser_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="poisson_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Poisson"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="poisson_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="discreta_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Discreta"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="discreta_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="empirica_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Emp&#xed;rica"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="empirica_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="exponencial_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Exponencial"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exponencial_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="geometrica_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Geom&#xe9;trica"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="geometrica_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="triangularInicioFin_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Triangular (Con inicio y fin del intervalo)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="triangularInicioFin_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="triangularInicioAlturaFin_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Triangular (Con inicio, altura y fin del intervalo)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="triangularInicioAlturaFin_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="uniforme_JButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Uniforme"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uniforme_JButtonActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
